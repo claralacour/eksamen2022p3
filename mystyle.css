@@ -22,7 +22,7 @@ nav{
 .headerimg{
     background-image: url(img/headerimg1.png); 
     padding-bottom: 500px;
-    padding-left: 0px;
+    margin: 0;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,6 +55,8 @@ h2{
 .nonestyle{
     background: none;
     border: none;
+    color: black;
+    box-shadow: none;
 }
 
 .dropdown ul{
@@ -118,26 +120,35 @@ h2{
 
 .slogan{
     position: absolute;
+    display: inline;
     top: 60%;
     padding: 50px;
     text-align: center;
     color: #D6CCFF;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "txt img";
+
+}
+
 h3{
     color: white;
     font-weight: 500;
     padding: 5px;
-    display: inline;
     
 }
 
 .hueimg{
-    width: 50%;
-    display: block;
+    width: 90%;
     margin-left: auto;
-    float: right;
     padding: 5px;
     filter: grayscale(100%);
+    grid-area: img;
 }
 .hueimg:hover{
     filter: grayscale(0%);
@@ -146,6 +157,7 @@ h3{
 
 p{
     padding: 5px;
+    grid-area: txt;
 }
 
 button{
@@ -154,4 +166,21 @@ button{
     font-family: 'Open Sans', sans-serif;
     border-radius: 20px;
     border: none;
+    font-size: medium;
+    box-shadow: 11px 9px 7px 0px rgba(0,0,0,0.15);
+    padding: 5px;
+    margin: 5px;
+    
+    
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.port1{
+    border: solid 2px;
+    height: 150px;
+    width: 150px;
 }
