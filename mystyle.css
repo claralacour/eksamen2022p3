@@ -19,7 +19,10 @@ nav{
     box-shadow: 1px 12px 12px 0px rgba(0,0,0,0.23);
 }
 
-
+.logo{
+    width: 62;
+    height:82;
+}
 
 .headerimg{
     background-image: url(img/headerimg1.png); 
@@ -123,19 +126,17 @@ h2{
 .slogan{
     position: absolute;
     display: inline;
-    top: 60%;
+    top: 55%;
     padding: 50px;
     text-align: center;
     color: #D6CCFF;
 }
 
-.container{
+.ommigcontainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     grid-template-areas: 
     "txt img";
-
 }
 
 h3{
@@ -157,9 +158,9 @@ h3{
     transition: 1s ease-in;
 }
 
-p{
+.knapogtxt p{
     padding: 5px;
-    grid-area: txt;
+    margin: 0;
 }
 
 button{
@@ -172,8 +173,6 @@ button{
     box-shadow: 11px 9px 7px 0px rgba(0,0,0,0.15);
     padding: 5px;
     margin: 5px;
-    
-    
 }
 
 button a{
@@ -181,8 +180,50 @@ button a{
     color: white;
 }
 
-.port1{
-    border: solid 2px;
-    height: 150px;
-    width: 150px;
+.knapogtxt{
+    grid-area: txt;
+}
+
+.portfoliocontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "port1 txtport2"
+    "port2 txtport1"
+    ;
+}
+
+
+.stjernerport{
+    width: 10%;
+    rotate: 10deg;
+}
+
+.hyggehue{
+    width: 90%;
+    margin-left: auto;
+    padding: 5px;
+    grid-area: port1;
+    filter: grayscale(100%);
+}
+
+.hyggehue:hover{
+    filter: grayscale(0%);
+    transition: 1s ease-in;
+}
+
+.selvportraet{
+    width: 90%;
+    padding: 5px;
+    grid-area: port2;
+    filter: grayscale(100%);
+}
+
+.portfoliotxt1{
+    grid-area: txtport2;
+}
+
+.portfoliotxt2{
+    grid-area: txtport1;
 }
