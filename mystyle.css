@@ -90,9 +90,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.137);
 }
 
-@media screen and (min-width: 800px) {
-    .headerimg {height: 100%;}
-}
+
 
 h1{
     color: rgb(255, 255, 255);
@@ -230,4 +228,12 @@ footer{
 }
 .linkedin{
     color: #5B37EE;
+}
+
+@media screen and (min-width: 800px) {
+
+    .headerimg {
+        height: 100%;
+        
+    }
 }
