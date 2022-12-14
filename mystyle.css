@@ -19,6 +19,44 @@ nav{
     box-shadow: 1px 12px 12px 0px rgba(0,0,0,0.23);
 }
 
+.logo{
+    width: 62;
+    height:82;
+}
+
+.headerimg{
+    background-image: url(img/headerimg1.png); 
+    padding-bottom: 500px;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -99;
+    
+}
+
+.headerimg::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+h2{
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+}
+
 .nonestyle{
     background: none;
     border: none;
@@ -27,7 +65,7 @@ nav{
 }
 
 .dropdown ul{
-    margin-top: 30px;
+    margin-top: 40px;
     position: absolute;
     right: 0px;
     background-color: #8d7798;
@@ -72,6 +110,7 @@ nav{
     border: none;
     border-radius: 20px;
 }
+<<<<<<< HEAD
 .headerimg{ 
     display: flex;
     justify-content: center;
@@ -104,6 +143,8 @@ h2{
     font-weight: 200;
 }
 
+=======
+>>>>>>> parent of 7dc6c89 (indexmobildone!)
 .headertxt{
     position: absolute;
     top: 45%;
@@ -154,20 +195,17 @@ h3{
     margin: 0;
 }
 
-.knapogtxt button{
-    padding: 5px;
-    margin: 5px;
-}
-
 button{
     background-color: #5B37EE;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     border-radius: 20px;
     border: none;
     font-size: medium;
     box-shadow: 11px 9px 7px 0px rgba(0,0,0,0.15);
+    padding: 5px;
+    margin: 5px;
 }
-
 
 button a{
     text-decoration: none;
@@ -181,11 +219,13 @@ button a{
 .portfoliocontainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "port1 txtport1"
-    "port2 txtport2"
+    "port1 txtport2"
+    "port2 txtport1"
     ;
 }
+
 
 .stjernerport{
     width: 10%;
@@ -193,7 +233,8 @@ button a{
 }
 
 .hyggehue{
-    width: 90%; 
+    width: 90%;
+    margin-left: auto;
     padding: 5px;
     grid-area: port1;
     filter: grayscale(100%);
@@ -212,13 +253,10 @@ button a{
 }
 
 .portfoliotxt1{
-    grid-area: txtport1;
-}
-
-.portfoliotxt2{
     grid-area: txtport2;
 }
 
+<<<<<<< HEAD
 footer{
     background-color: #958499;
     padding: 5px;
@@ -236,4 +274,8 @@ footer{
         height: 100%;
         
     }
+=======
+.portfoliotxt2{
+    grid-area: txtport1;
+>>>>>>> parent of 7dc6c89 (indexmobildone!)
 }
