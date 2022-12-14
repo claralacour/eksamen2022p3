@@ -64,7 +64,6 @@ nav{
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
-    
 }
 .kontaktknap{
     background-color: #5B37EE;
@@ -73,15 +72,12 @@ nav{
     border: none;
     border-radius: 20px;
 }
-.headerimg{
-    background-image: url(img/headerimg1.png); 
-    padding-bottom: 500px;
-    margin: 0;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
+.headerimg{ 
+    display: flex;
+    justify-content: center;
+    height: 500px;
     z-index: -99;
-    
+
 }
 
 .headerimg::before{
@@ -92,6 +88,10 @@ nav{
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.137);
+}
+
+@media screen and (min-width: 800px) {
+    .headerimg {height: 100%;}
 }
 
 h1{
@@ -120,10 +120,8 @@ h2{
 
 .slogan{
     position: absolute;
-    display: inline;
     top: 55%;
     padding: 50px;
-    text-align: center;
     color: #D6CCFF;
 }
 
