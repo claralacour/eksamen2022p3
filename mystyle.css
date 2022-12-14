@@ -3,6 +3,7 @@ html{
 }
 
 body{
+    width: auto;
     margin: 0;
     background: rgb(127,90,176);
     background: linear-gradient(0deg, rgba(127,90,176,1) 0%, rgba(141,119,152,1));
@@ -41,7 +42,7 @@ nav{
     transform: translateY(-10px);
     transition: all 0.4s ease;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
-    z-index: 99;
+    z-index: 1;
 }
 
 .dropdown a{
@@ -72,22 +73,14 @@ nav{
     border: none;
     border-radius: 20px;
 }
+
 .headerimg{ 
     display: flex;
     justify-content: center;
-    height: 500px;
-    z-index: -99;
+    max-width: 200px;
+    z-index: -1;
+    position: relative;
 
-}
-
-.headerimg::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.137);
 }
 
 
