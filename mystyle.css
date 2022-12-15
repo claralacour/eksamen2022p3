@@ -91,6 +91,12 @@ h2{
     font-weight: 200;
 }
 
+h3{
+    color: white;
+    font-weight: 500;
+    padding: 5px;   
+}
+
 .headertxt{
     position: absolute;
     top: 55%;
@@ -115,13 +121,6 @@ h2{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "txt img";
-}
-
-h3{
-    color: white;
-    font-weight: 500;
-    padding: 5px;
-    
 }
 
 .hueimg{
@@ -154,7 +153,6 @@ button{
     font-size: medium;
     box-shadow: 11px 9px 7px 0px rgba(0,0,0,0.15);
 }
-
 
 button a{
     text-decoration: none;
@@ -218,12 +216,14 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+
 .linkedin{
     color: #5B37EE;
 }
 
 .ommig{
-    padding: 5px;
+    padding: 10px;
+    letter-spacing: 1px;
 }
 
 .kompetencer{
@@ -263,4 +263,56 @@ footer{
     list-style: none;
     padding: 5px;
     margin: 0;
+}
+
+.ommigtattoo{
+    filter: grayscale(100%);
+}
+
+.portfolioheadings{
+    padding: 5px;
+}
+
+.kontaktformular{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+.kontaktinput{
+    width: 20rem;
+    height: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.kontaktinput:focus{
+    background-color: #D6CCFF;
+}
+
+.besked{
+    height: 20rem;
+    width: 20rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.besked:focus{
+    background-color: #D6CCFF;
+}
+
+.send{
+    background-color: #5B37EE;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+    border: none;
+    font-size: medium;
+    box-shadow: 11px 9px 7px 0px rgba(0,0,0,0.15);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
