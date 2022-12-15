@@ -75,15 +75,9 @@ nav{
 }
 
 .headerimg{ 
-    display: flex;
-    justify-content: center;
-    max-width: 200px;
     z-index: -1;
     position: relative;
-
 }
-
-
 
 h1{
     color: rgb(255, 255, 255);
@@ -99,20 +93,20 @@ h2{
 
 .headertxt{
     position: absolute;
-    top: 45%;
+    top: 55%;
     padding: 5px;
 }
 
 .header2txt{
     position: absolute;
-    top: 50%;
+    top: 60%;
     padding: 5px;
 }
 
 .slogan{
     position: absolute;
-    top: 55%;
-    padding: 50px;
+    top: 80%;
+    padding: 5px;
     color: #D6CCFF;
 }
 
@@ -223,3 +217,15 @@ footer{
     color: #5B37EE;
 }
 
+.ommig{
+    padding: 5px;
+}
+
+.kompetencer{
+    color: white;
+    list-style: none;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 5px;
+}
