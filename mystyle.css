@@ -165,18 +165,23 @@ button a{
     grid-area: txt;
 }
 
-.portfoliocontainer{
+.portfoliocontainerindex{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "port1 txtport1"
-    "port2 txtport2"
+    "port1 txtport2"
+    "port2 txtport1"
     ;
 }
 
 .stjernerport{
-    width: 10%;
+    height: 1em;
     rotate: 10deg;
+}
+
+.moon{
+    height: 1em;
+    rotate: -10deg;
 }
 
 .hyggehue{
@@ -228,4 +233,34 @@ footer{
     font-style: italic;
     margin: 0;
     padding: 5px;
+}
+
+.star2{
+    height: 1em;
+}
+
+.portfoliocontainer{
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+
+}
+
+.portfolioimgs{
+    filter: grayscale(100%);
+    width: 55vw;
+}
+
+.portfolioimgs:hover{
+    filter: grayscale(0%);
+    transition: 1s ease-in;
+}
+
+.workshoplist{
+    color: white;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
 }
