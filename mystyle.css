@@ -293,12 +293,11 @@ footer{
 }
 
 .besked{
-    height: 20rem;
+    height: 10rem;
     width: 20rem;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
-    resize: none;
 }
 
 .besked:focus{
@@ -316,3 +315,8 @@ footer{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.kontaktikoner{
+    color: white;
+}
+
