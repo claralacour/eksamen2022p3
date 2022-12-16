@@ -157,7 +157,7 @@ p{
 }
 
 .knapogtxt button{
-    padding: 5px;
+    padding: 8px;
     margin: 5px;
 }
 
@@ -166,6 +166,7 @@ button{
     font-family: 'Open Sans', sans-serif;
     border-radius: 20px;
     border: none;
+    padding: 8px;
     font-size: medium;
     box-shadow: 11px 9px 7px 0px rgba(0,0,0,0.15);
 }
@@ -326,6 +327,7 @@ footer{
     box-shadow: 11px 9px 7px 0px rgba(0,0,0,0.15);
     margin-top: 5px;
     margin-bottom: 5px;
+    padding: 8px;
 }
 
 .kontaktikoner{
@@ -353,7 +355,7 @@ footer{
     display: none;
 }
 
-.flex{
+.flexindex{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,7 +416,7 @@ footer{
     .hueimgdesktop{
         display: block;
         width: 450px;
-        padding-left: 20%
+        padding-left: 5rem
     }
 
     button{
@@ -431,7 +433,7 @@ footer{
     .huedesk{
         display: block;
         width: 450px;
-        padding-left: 10%;
+        padding-left: 5rem;
     }
 
     .selvportraet{
@@ -461,9 +463,25 @@ footer{
     }
     .portfolioimgs{
         width: 25rem;
-        padding-left: 10rem;
+        padding-left: 5rem;
         padding-bottom: 5rem;
     }
+    
+    .kontaktformular{
+        font-size: 18px;
+    }
 
-
-
+    .kontaktinput{
+        width: 45rem;
+        height: 2rem;
+    }
+    .besked{
+        width: 45rem;
+        height: 15rem;
+    }
+    .send{
+        font-size: 18px;
+    }
+    .kontaktikoner{
+        
+}
