@@ -55,22 +55,25 @@ nav{
     margin-bottom: 5px;
 }
 
-.k{
-    color: black;
-    border: 2px solid black;
-    border-radius: 20px;
-}
 
 .dropdown :focus + ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
 }
+
+.k{
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
 .kontaktknap{
     background-color: #5B37EE;
     font-weight: 600;
+    text-align: center;
     color: white;
-    border: none;
+    border: 1px solid #5B37EE;
     border-radius: 20px;
 }
 
@@ -154,6 +157,7 @@ p{
 .knapogtxt p{
     padding: 5px;
     margin: 0;
+    
 }
 
 .knapogtxt button{
@@ -232,6 +236,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    pointer-events: auto;
 }
 
 .linkedin{
@@ -416,7 +421,7 @@ footer{
     .hueimgdesktop{
         display: block;
         width: 450px;
-        padding-left: 5rem
+        padding-left: 15rem;
     }
 
     button{
@@ -482,8 +487,51 @@ footer{
     .send{
         font-size: 18px;
     }
-    .kontaktikoner{
-        
-}
+    
+    nav{
+        background-color: #958499;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 12px 12px 0px rgba(0,0,0,0.23);
+    }
+    
+    .dropdown ul{
+        margin-top: -1rem;
+        position: absolute;
+        right: 3rem;
+        background-color:none;
+        width: 0px;
+        height: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        list-style: none;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .dropdown :hover{
+        background-color: rgba(46, 46, 46, 0.185);
+        transition: ease-in-out 0.3s;
+    }
 
-}
+    .dropdown a{
+        display: block;
+        text-decoration: none;
+        padding: 10px 60px;
+        width: 60px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 2rem;
+    }
+
+    .dropdown button{
+        display: none;
+    }
+    .logo{
+        padding-left: 5rem;
+    }
+}   
